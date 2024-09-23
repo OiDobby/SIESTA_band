@@ -1,0 +1,44 @@
+set term postscript eps color enhanced
+set output "Si-band.eps"
+set nokey
+set yr [-4:4]
+set xtic ("{/Symbol G}"0, "K"0.745356, "M"1.118034, "{/Symbol G}"1.618034)
+set mytic 2
+set ytic 1
+set grid xtics lw 4
+set xzeroaxis lw 4
+set xtic font "Times Roman,30"
+set ytic font "Times Roman,30"
+set tics font "Times Roman,30"
+set tmargin 3
+set bmargin 6
+set lmargin 10
+set rmargin 2
+set xlabel 'Wave Vector' font "Times Roman, 36" offset 0,-1.5,0
+set ylabel 'E-E_F (eV)' font "Times Roman, 36" offset -2,0,0
+plot    "up-band_siesta" using ($1):($2+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($3+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($4+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($5+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($6+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($7+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($8+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($9+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($10+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($11+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($12+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($13+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($14+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($15+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($16+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($17+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($18+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($19+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($20+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($21+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($22+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($23+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($24+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($25+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($26+3.574050) w l  lw 4 lt 1 lc 0 ,\
+        "up-band_siesta" using ($1):($27+3.574050) w l  lw 4 lt 1 lc 0 
