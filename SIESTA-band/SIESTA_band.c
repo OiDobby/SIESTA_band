@@ -333,7 +333,7 @@ int main(void){
   printf("***	spin effect : X		***\n");
  }
 
-//spin effecj check
+//spin moment check
 
 
  for(c=1;c<=spin;c++){
